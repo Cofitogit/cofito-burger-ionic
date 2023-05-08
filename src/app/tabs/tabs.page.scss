@@ -2,9 +2,11 @@
 ion-tab-bar {
     --padding: 0px;
     --border: unset !important;
+    --color-selected: rgb(230, 186, 43);
     height: 40px;
 }
 
 ion-icon {
     font-size: unset !important;
 }
+

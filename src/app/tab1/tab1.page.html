@@ -1,73 +1,45 @@
-<ion-header mode="ios">
-  <ion-toolbar>
-    <ion-title>
-      <img
-        src="assets/images/burger.webp"
-        alt="App Icon"
-        width="60"
-        height="40"
-        style="margin-top: 2px;"
-      />
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<img src="assets/images/logodeleit.png" class="main-icon" alt="App Icon" />
 
 <ion-content [fullscreen]="true">
-
-  <ion-card>
+  <ion-card style="margin-top: 70px">
     <swiper-container effect="cards" [loop]="true">
       <swiper-slide>
         <ion-img src="assets/images/home1.jpg"></ion-img>
       </swiper-slide>
       <swiper-slide>
-        <ion-img src="assets/images/home2.jpg"></ion-img>
+        <ion-img src="assets/images/home2.png"></ion-img>
       </swiper-slide>
       <swiper-slide>
-        <ion-img src="assets/images/home3.jpeg"></ion-img>
+        <ion-img src="assets/images/home3.png"></ion-img>
       </swiper-slide>
     </swiper-container>
   </ion-card>
   <ion-row>
     <ion-grid>
-      <ion-card class="pedido" size="sm" >
-        <ion-card-content style="filter: drop-shadow(3px 3px 3px white);">
-          Aquí podras adelantar tu pedido y elegir como retirarlo
-        </ion-card-content>
+      <ion-card-title class="home-card-title">Prepara tu pedido</ion-card-title>
+
+      <ion-card class="pedido ion-activatable ripple-parent">
+        <ion-ripple-effect></ion-ripple-effect>
       </ion-card>
 
-      <ion-card class="delivery">
-        <ion-card-header>
-          <ion-card-subtitle style="padding: 3px; backdrop-filter: blur(10px); border-radius: 15px; color: white; text-align: center;">Pedí, nosotros te lo llevamos</ion-card-subtitle>
-        </ion-card-header>
-
+      <ion-card-title class="home-card-title">Te lo llevamos a tus manos</ion-card-title>
+      <ion-card class="delivery ion-activatable ripple-parent">
+        <ion-ripple-effect></ion-ripple-effect>
       </ion-card>
 
-      
-        <ion-card-title style="width: 100%; text-align: center;">DESCUENTOS</ion-card-title>
-      
-
-      <ion-card class="discount">
- 
+      <ion-card-title class="home-card-title">DESCUENTOS</ion-card-title>
+      <ion-card class="discount ion-activatable ripple-parent">
+        <ion-ripple-effect></ion-ripple-effect>
       </ion-card>
 
-      <ion-card class="voucher">
-        <ion-card-header>
-          <ion-card-title>Desayuno en tu mano</ion-card-title>
-          <ion-card-subtitle>Adelanta tu pedido</ion-card-subtitle>
-        </ion-card-header>
-        <ion-card-content>
-          Aquí podras adelantar tu pedido y elegir como retirarlo
-        </ion-card-content>
+      <ion-card-title class="home-card-title">Obtene tu voucher</ion-card-title>
+      <ion-card class="voucher ion-activatable ripple-parent">
+        <ion-ripple-effect></ion-ripple-effect>
       </ion-card>
 
-      <ion-card class="sticker">
-        <ion-card-header>
-          <ion-card-title>Desayuno en tu mano</ion-card-title>
-          <ion-card-subtitle>Adelanta tu pedido</ion-card-subtitle>
-        </ion-card-header>
-        <ion-card-content>
-          Aquí podras adelantar tu pedido y elegir como retirarlo
-        </ion-card-content>
+      <ion-card-title class="home-card-title">Stickers</ion-card-title>
+      <ion-card class="sticker ion-activatable ripple-parent">
+        <ion-ripple-effect></ion-ripple-effect>
       </ion-card>
     </ion-grid>
   </ion-row>
