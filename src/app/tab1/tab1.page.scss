@@ -15,12 +15,13 @@ ion-toolbar {
   box-shadow: 0 0 7px rgb(187, 187, 187);
 }
 
+
 ion-card {
   margin-top: 0px;
 }
 
 ion-img {
-  height: 350px;
+  height: 330px;
   object-fit: fill;
 }
 
@@ -33,7 +34,8 @@ ion-card {
 .home-card-title {
   width: fit-content;
   text-align: center;
-  background-color: black;
+  box-shadow: 0 3px 8px 1px grey;
+  background-color: #515151;
   color: white;
   border-top: 3px solid rgb(255 176 28);
   padding-inline: 15px;
@@ -72,7 +74,7 @@ ion-card {
 }
 
 .ripple-parent {
-  color: rgba(255, 187, 0, 0.301);
+  color: rgb(255, 187, 0);
   position: relative;
   overflow: hidden;
 }
