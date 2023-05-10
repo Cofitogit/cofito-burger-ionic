@@ -1,17 +1,231 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 3
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-searchbar
+    color="warning"
+    placeholder="buscar cupones"
+    mode="ios"
+    class="search"
+  ></ion-searchbar>
+  
+  <main class="main">
+    <div style="opacity: 0;">asd</div>
+    <ion-card color="warning" class="main-card">
+      <swiper-container
+        effect="cards"
+        [loop]="true"
+        pagination="true"
+        pagination-clickable="true"
+      >
+        <swiper-slide>
+          <ion-img src="assets/images/coffee1.png" class="slide-img"></ion-img>
+        </swiper-slide>
+        <swiper-slide>
+          <ion-img src="assets/images/coffee2.png" class="slide-img"></ion-img>
+        </swiper-slide>
+      </swiper-container>
+    </ion-card>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+    <div class="voucher-list">
+      <span>Tus promos en Café</span>
+      <swiper-container
+      slides-per-view="2"
+      space-between="15"
+      free-mode="true"
+    >
+      <swiper-slide>
+        <ion-img
+          src="assets/images/vouchercoffee.png"
+          class="slide-img"
+        ></ion-img>
+      </swiper-slide>
+      <swiper-slide>
+        <ion-img
+          src="assets/images/vouchercoffee.png"
+          class="slide-img"
+        ></ion-img>
+      </swiper-slide>
+      <swiper-slide>
+        <ion-img
+          src="assets/images/vouchercoffee.png"
+          class="slide-img"
+        ></ion-img>
+      </swiper-slide>
+      <swiper-slide>
+        <ion-img
+          src="assets/images/vouchercoffee.png"
+          class="slide-img"
+        ></ion-img>
+      </swiper-slide>
+    </swiper-container>
+    </div>
+
+    <div class="voucher-list">
+      <span>Para compartir</span>
+      <swiper-container
+      slides-per-view="2"
+      space-between="15"
+      free-mode="true"
+    >
+      <swiper-slide>
+        <ion-img
+          src="assets/images/vouchercompartir.png"
+          class="slide-img"
+        ></ion-img>
+      </swiper-slide>
+      <swiper-slide>
+        <ion-img
+          src="assets/images/vouchercompartir.png"
+          class="slide-img"
+        ></ion-img>
+      </swiper-slide>
+      <swiper-slide>
+        <ion-img
+          src="assets/images/vouchercompartir.png"
+          class="slide-img"
+        ></ion-img>
+      </swiper-slide>
+      <swiper-slide>
+        <ion-img
+          src="assets/images/vouchercompartir.png"
+          class="slide-img"
+        ></ion-img>
+      </swiper-slide>
+    </swiper-container>
+    </div>
+
+    <div class="voucher-list">
+      <span>Exclusivo para llevar</span>
+      <swiper-container
+      slides-per-view="2"
+      space-between="15"
+      free-mode="true"
+    >
+      <swiper-slide>
+        <ion-img
+          src="assets/images/voucherllevar.jpg"
+          class="slide-img"
+        ></ion-img>
+      </swiper-slide>
+      <swiper-slide>
+        <ion-img
+          src="assets/images/voucherllevar.jpg"
+          class="slide-img"
+        ></ion-img>
+      </swiper-slide>
+      <swiper-slide>
+        <ion-img
+          src="assets/images/voucherllevar.jpg"
+          class="slide-img"
+        ></ion-img>
+      </swiper-slide>
+      <swiper-slide>
+        <ion-img
+          src="assets/images/voucherllevar.jpg"
+          class="slide-img"
+        ></ion-img>
+      </swiper-slide>
+    </swiper-container>
+    </div>
+
+    <div class="voucher-list">
+      <span>Fanaticos de los postres</span>
+      <swiper-container
+      slides-per-view="2"
+      space-between="15"
+      free-mode="true"
+    >
+      <swiper-slide>
+        <ion-img
+          src="assets/images/voucherexample.png"
+          class="slide-img"
+        ></ion-img>
+      </swiper-slide>
+      <swiper-slide>
+        <ion-img
+          src="assets/images/voucherexample.png"
+          class="slide-img"
+        ></ion-img>
+      </swiper-slide>
+      <swiper-slide>
+        <ion-img
+          src="assets/images/voucherexample.png"
+          class="slide-img"
+        ></ion-img>
+      </swiper-slide>
+      <swiper-slide>
+        <ion-img
+          src="assets/images/voucherexample.png"
+          class="slide-img"
+        ></ion-img>
+      </swiper-slide>
+    </swiper-container>
+    </div>
+
+    <div class="voucher-list">
+      <span>Ofertas para vos</span>
+      <swiper-container
+      slides-per-view="2"
+      space-between="15"
+      free-mode="true"
+    >
+      <swiper-slide>
+        <ion-img
+          src="assets/images/voucherofertas.png"
+          class="slide-img"
+        ></ion-img>
+      </swiper-slide>
+      <swiper-slide>
+        <ion-img
+          src="assets/images/voucherofertas.png"
+          class="slide-img"
+        ></ion-img>
+      </swiper-slide>
+      <swiper-slide>
+        <ion-img
+          src="assets/images/voucherofertas.png"
+          class="slide-img"
+        ></ion-img>
+      </swiper-slide>
+      <swiper-slide>
+        <ion-img
+          src="assets/images/voucherofertas.png"
+          class="slide-img"
+        ></ion-img>
+      </swiper-slide>
+    </swiper-container>
+    </div>
+
+    <div class="voucher-list">
+      <span>Para los niños</span>
+      <swiper-container
+      slides-per-view="2"
+      space-between="15"
+      free-mode="true"
+    >
+      <swiper-slide>
+        <ion-img
+          src="assets/images/voucherninos.webp"
+          class="slide-img"
+        ></ion-img>
+      </swiper-slide>
+      <swiper-slide>
+        <ion-img
+          src="assets/images/voucherninos.webp"
+          class="slide-img"
+        ></ion-img>
+      </swiper-slide>
+      <swiper-slide>
+        <ion-img
+          src="assets/images/voucherninos.webp"
+          class="slide-img"
+        ></ion-img>
+      </swiper-slide>
+      <swiper-slide>
+        <ion-img
+          src="assets/images/voucherninos.webp"
+          class="slide-img"
+        ></ion-img>
+      </swiper-slide>
+    </swiper-container>
+    </div>
+  </main>
 </ion-content>

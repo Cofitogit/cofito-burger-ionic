@@ -1,14 +1,45 @@
-import { Component } from '@angular/core';
+import { Component, NgZone } from '@angular/core';
+import { Router } from '@angular/router';
 import { Animation, AnimationController } from '@ionic/angular';
 
 @Component({
   selector: 'app-tab1',
   templateUrl: 'tab1.page.html',
-  styleUrls: ['tab1.page.scss']
+  styleUrls: ['tab1.page.scss'],
 })
 export class Tab1Page {
+  constructor(
+    private animationCtrl: AnimationController,
+    private router: Router,
+    private ngZone: NgZone
+  ) {}
 
-  constructor(private animationCtrl: AnimationController) {}
+  cupones() {
+    const main = document.querySelector('.voucher');
+    if (!main) return;
+
+    const animation = this.animationCtrl
+      .create()
+      .duration(250)
+      .addElement(main)
+      .fromTo('opacity', 1, 0)
+      .fromTo('transform', 'translateX(0)', 'translateX(100%)');
+
+    animation.onFinish(() => {
+      this.ngZone.run(() => {
+        this.router.navigate(['/tabs/tab3']);
+        const animation = this.animationCtrl
+          .create()
+          .duration(0)
+          .addElement(main)
+          .fromTo('opacity', 0, 1)
+          .fromTo('transform', 'translateX(100%)', 'translateX(0)');
+        animation.play();
+      });
+    });
+
+    animation.play();
+  }
 
   ngOnInit() {
     setTimeout(() => {
@@ -26,10 +57,23 @@ export class Tab1Page {
             { offset: 0.5, transform: 'translate(5%) rotate(-3deg)' },
             { offset: 1, transform: 'translate(0)' },
           ]);
-  
+
         logo.play();
       }
-    }, 4000)
+    }, 4000);
   }
 
+  ionViewWillEnter() {
+    const main = document.querySelector('.main');
+    if (main !== null) {
+      const animation = this.animationCtrl
+        .create()
+        .duration(250)
+        .addElement(main)
+        .fromTo('opacity', 0, 1)
+        .fromTo('transform', 'translateY(-100%) scale(0)', 'translateY(0) scale(1)');
+
+      animation.play();
+    }
+  }
 }

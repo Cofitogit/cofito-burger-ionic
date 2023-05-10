@@ -15,20 +15,24 @@ ion-toolbar {
   box-shadow: 0 0 7px rgb(187, 187, 187);
 }
 
-
-ion-card {
-  margin-top: 0px;
-}
-
 ion-img {
   height: 330px;
-  object-fit: fill;
+  object-fit: cover;
 }
 
 ion-card {
   margin-bottom: 20px;
   margin-inline: 20px;
   border-radius: 15px;
+  margin-top: 0px;
+  min-width: 300px;
+}
+
+@media (min-width: 400px) {
+  main {
+    width: 380px;
+    margin: auto;
+  }
 }
 
 .home-card-title {
