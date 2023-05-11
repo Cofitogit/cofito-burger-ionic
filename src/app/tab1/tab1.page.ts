@@ -68,10 +68,9 @@ export class Tab1Page {
     if (main !== null) {
       const animation = this.animationCtrl
         .create()
-        .duration(250)
+        .duration(500)
         .addElement(main)
         .fromTo('opacity', 0, 1)
-        .fromTo('transform', 'translateY(-100%) scale(0)', 'translateY(0) scale(1)');
 
       animation.play();
     }

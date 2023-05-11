@@ -16,7 +16,7 @@ ion-toolbar {
 }
 
 ion-img {
-  height: 330px;
+  height: 360px;
   object-fit: cover;
 }
 
@@ -28,12 +28,11 @@ ion-card {
   min-width: 300px;
 }
 
-@media (min-width: 400px) {
-  main {
-    width: 380px;
-    margin: auto;
-  }
+.home-card {
+  margin-inline: 10px;
+  box-shadow: -1px 6px 1px 3px rgb(255 176 28);
 }
+
 
 .home-card-title {
   width: fit-content;
