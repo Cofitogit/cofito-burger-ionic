@@ -8,12 +8,16 @@ import { Tab4PageRoutingModule } from './tab4-routing.module';
 
 import { Tab4Page } from './tab4.page';
 
+import { MatIconModule } from '@angular/material/icon';
+
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    Tab4PageRoutingModule
+    Tab4PageRoutingModule,
+    MatIconModule
   ],
   declarations: [Tab4Page]
 })

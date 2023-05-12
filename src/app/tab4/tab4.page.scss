@@ -1,0 +1,40 @@
+.items {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    mat-icon {
+        font-size: 30px;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+    }
+
+    h6 {
+        color: rgb(136, 136, 136);
+    }
+
+
+}
+
+ion-label {
+    font-weight: 600;
+    font-size: 15px !important;
+    letter-spacing: 1px;
+    color: rgb(92, 92, 92) !important;
+}
+
+.main-more {
+    margin: 10px;
+    h5{
+        margin-inline-start: 10px;
+    }
+}
+
+ion-accordion {
+    margin-bottom: 20px;
+}
+
+.item-lines-full {
+    --border-width: 0 0 0 0;
+}

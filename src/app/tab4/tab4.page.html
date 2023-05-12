@@ -1,13 +1,90 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>tab4</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">tab4</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<main class="main-more">
+  <h5>Hola !!</h5>
+  <ion-grid>
+    <div class="items" (click)="home()">
+      <mat-icon>home</mat-icon>
+      <h6>Home</h6>
+    </div>
+
+    <div class="items">
+      <mat-icon>person_outline</mat-icon>
+      <h6>Perfil</h6>
+    </div>
+
+    <div class="items">
+      <mat-icon>card_giftcard</mat-icon>
+      <h6>Mis Cupones</h6>
+    </div>
+
+    <div class="items" (click)="comprar()">
+      <mat-icon>shopping_bag</mat-icon>
+      <h6>Mis pedidos</h6>
+    </div>
+
+    <div class="items">
+      <mat-icon>settings</mat-icon>
+      <h6>Configuración</h6>
+    </div>
+  </ion-grid>
+</main>
+
+<ion-accordion-group [multiple]="true" class="accordion">
+  <ion-accordion value="first">
+    <ion-item slot="header">
+      <ion-label>Comprar ahora</ion-label>
+    </ion-item>
+    <div class="ion-padding items" slot="content" (click)="comprar()">
+      <mat-icon>shopping_bag</mat-icon>
+      <h6>Comprar</h6>
+    </div>
+    <div class="ion-padding items" slot="content" (click)="cupones()">
+      <mat-icon>loyalty</mat-icon>
+      <h6>Cupones</h6>
+    </div>
+  </ion-accordion>
+  <ion-accordion value="second">
+    <ion-item slot="header">
+      <ion-label>El Deleit</ion-label>
+    </ion-item>
+    <div class="ion-padding items" slot="content">
+      <mat-icon>bakery_dining</mat-icon>
+      <h6>Quienes somos</h6>
+    </div>
+    <div class="ion-padding items" slot="content">
+      <mat-icon>emoji_food_beverage</mat-icon>
+      <h6>Productos</h6>
+    </div>
+    <div class="ion-padding items" slot="content">
+      <mat-icon>location_on</mat-icon>
+      <h6>Sucursales</h6>
+    </div>
+    <div class="ion-padding items" slot="content">
+      <mat-icon>mark_chat_read</mat-icon>
+      <h6>Reseñas</h6>
+    </div>
+    <div class="ion-padding items" slot="content">
+      <mat-icon>phone_iphone</mat-icon>
+      <h6>Sobre la App</h6>
+    </div>
+    <div class="ion-padding items" slot="content">
+      <mat-icon>sticky_note_2</mat-icon>
+      <h6>Stickers</h6>
+    </div>
+    <div class="ion-padding items" slot="content">
+      <mat-icon>privacy_tip</mat-icon>
+      <h6>Privacidad</h6>
+    </div>
+  </ion-accordion>
+  <ion-accordion value="third">
+    <ion-item slot="header">
+      <ion-label>Ayuda</ion-label>
+    </ion-item>
+    <div class="ion-padding items" slot="content">
+      <mat-icon>help_outline</mat-icon>
+      <h6>Preguntas frecuentes</h6>
+    </div>
+  </ion-accordion>
+</ion-accordion-group>
+
 </ion-content>

@@ -1,0 +1,57 @@
+.segment {
+  margin: 15px;
+  justify-content: start;
+
+  ion-segment {
+    width: 50%;
+    border-radius: 30px;
+  }
+
+
+
+  ion-segment-button {
+    --border-radius: 30px;
+    --indicator-color: var(
+      --ion-color-step-350,
+      var(--ion-background-color, orange)
+    );
+    margin-top: 1px;
+    margin-bottom: 1px;
+  }
+}
+
+.main-comprar {
+  margin: 15px;
+}
+
+ion-card {
+  border-radius: 15px;
+  box-shadow: 0 5px 10px 2px rgb(180, 180, 180);
+  margin-bottom: 20px;
+}
+
+.section-title {
+    width: 100%;
+    text-align: center;
+}
+
+.items {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  mat-icon {
+      font-size: 30px;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+  }
+
+  h5 {
+      width: 80%;
+      font-weight: 400;
+      margin-block: auto;
+  }
+
+
+}

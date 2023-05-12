@@ -1,9 +1,165 @@
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      <ion-icon name="location-outline"></ion-icon> Av. General Paz 355
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button color="warning">Cambiar</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+<ion-content [fullscreen]="true">
+  <div class="segment">
+    <ion-segment value="custom" mode="ios">
+      <ion-segment-button value="custom">
+        <ion-label>Pedí y Retirá</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="segment">
+        <ion-label>DT Delivery</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+  <main class="main-comprar">
+    <ion-card>
+      <div class="section">
+        <h2 class="section-title">Promociones</h2>
+        <ion-list>
+          <ion-item>
+            <ion-label>
+              <h3>Café con pan dulce</h3>
+              <p>Disfruta de un delicioso café con pan dulce recién horneado</p>
+              <p class="price">$5.00</p>
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>
+              <h3>Panecillos surtidos</h3>
+              <p>Paquete de 6 panecillos recién horneados</p>
+              <p class="price">$8.50</p>
+            </ion-label>
+          </ion-item>
+        </ion-list>
+      </div>
+    </ion-card>
+
+    <ion-card>
+      <div class="section">
+        <h2 class="section-title">DT Ofertas</h2>
+        <ion-list>
+          <ion-item>
+            <ion-label>
+              <h3>Café con churros</h3>
+              <p>Disfruta de un delicioso café con churros recién hechos</p>
+              <p class="price">$7.00</p>
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>
+              <h3>Pan francés</h3>
+              <p>Pan francés recién horneado</p>
+              <p class="price">$4.00</p>
+            </ion-label>
+          </ion-item>
+        </ion-list>
+      </div>
+    </ion-card>
+
+    <ion-card>
+      <div class="section">
+        <h2 class="section-title">Para niños</h2>
+        <ion-list>
+          <ion-item>
+            <ion-label>
+              <h3>Hotcakes con miel</h3>
+              <p>Hotcakes con miel y mantequilla</p>
+              <p class="price">$5.50</p>
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>
+              <h3>Donas glaseadas</h3>
+              <p>Paquete de 6 donas glaseadas</p>
+              <p class="price">$6.00</p>
+            </ion-label>
+          </ion-item>
+        </ion-list>
+      </div>
+    </ion-card>
+
+    <ion-card>
+      <div class="section">
+        <h2 class="section-title">Cafetería</h2>
+        <ion-list>
+          <ion-item>
+            <ion-label>
+              <h3>Café americano</h3>
+              <p>Café americano recién hecho</p>
+              <p class="price">$2.50</p>
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>
+              <h3>Café con leche</h3>
+              <p>Café recién hecho con leche.</p>
+              <p class="item-price">$3.00</p>
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>
+              <h3>Café expreso</h3>
+              <p>Una pequeña porción de café recién hecho y muy concentrado.</p>
+              <p class="item-price">$2.00</p>
+            </ion-label>
+          </ion-item>
+        </ion-list>
+      </div>
+    </ion-card>
+
+    <ion-card>
+      <div class="section">
+        <h2 class="section-title">Tortas y postres</h2>
+        <ion-list>
+          <ion-item>
+            <ion-label>
+              <h3>Torta de zanahoria</h3>
+              <p>
+                Una deliciosa torta de zanahoria hecha con ingredientes frescos.
+              </p>
+              <p class="item-price">$5.00</p>
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>
+              <h3>Cupcake de vainilla</h3>
+              <p>
+                Un delicioso y esponjoso cupcake de vainilla con un suave
+                glaseado.
+              </p>
+              <p class="item-price">$2.00</p>
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>
+              <h3>Flan</h3>
+              <p>Un cremoso flan casero con un toque de vainilla.</p>
+              <p class="item-price">$3.50</p>
+            </ion-label>
+          </ion-item>
+        </ion-list>
+      </div>
+    </ion-card>
+
+    <ion-card color="warning">
+      <div class="ion-padding items" >
+        <mat-icon>shopping_bag</mat-icon>
+        <h5>Mis pedidos</h5>
+        <mat-icon>chevron_right</mat-icon>
+      </div>
+    </ion-card>
+  </main>
 </ion-content>
